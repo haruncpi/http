@@ -7,24 +7,23 @@ use Haruncpi\Http;
 
 ### GET request
 ```php
-$data = [
-    'user_id' => 123
-];
+$url    = "https://jsonplaceholder.typicode.com/comments";
+$data   = [ 'postId' => 1 ];
 
-$response = HTTP::get( $url, $data);
+$response = HTTP::get( $url, $data );
 ```
 ### POST request
 ```php
-$data = [
-    'user_id' => 123
-];
+$url    = "https://jsonplaceholder.typicode.com/posts";
+$data   = [ 'title' => 'This is post title' ];
 
-$response = HTTP::post( $url, $data);
+$response = HTTP::post( $url, $data );
 ```
 
 ### More options
 ```php
-$response = HTTP::post( $url, $data, $headers, $curlOptions);
+$response = HTTP::get( $url, $data, $headers, $curlOptions );
+$response = HTTP::post( $url, $data, $headers, $curlOptions );
 ```
 
 ### Useful methods
