@@ -7,7 +7,7 @@ composer require haruncpi/http
 
 Import class  
 ```php
-use Haruncpi\Http;
+use Haruncpi\Http\Http;
 ```
 
 ### GET request
