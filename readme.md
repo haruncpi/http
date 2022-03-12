@@ -1,6 +1,9 @@
 # Simple HTTP client for PHP
 
-First import the class  
+Install  
+`composer require haruncpi/http`  
+
+Import class  
 ```php
 use Haruncpi\Http;
 ```
