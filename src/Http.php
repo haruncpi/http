@@ -70,7 +70,7 @@ class Http
         $finalCurlOptions[CURLOPT_HEADER] = 1;
 
         if (self::TYPE_POST === $type && count($data)) {
-            $finalCurlOptions[CURLOPT_POSTFIELDS] = json_encode($data);
+            $finalCurlOptions[CURLOPT_POSTFIELDS] = $data;
         }
 
         curl_setopt_array($curl, $finalCurlOptions);
